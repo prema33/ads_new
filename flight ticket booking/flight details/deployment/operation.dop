@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="flight details">
+  <name>flight_details</name>
+  <uuid>3c950520-9113-4df2-bc3d-072a751b196d</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#25ec3801-7572-47ff-a08f-91b8a43be7a9"/>
+  <targetRuleProject href="../../flight%20details#465106a6-ba09-4bed-8857-1847f800f25e"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["flight_details"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
