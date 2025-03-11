@@ -1,0 +1,224 @@
+
+package com.ibm.ads.samples.ml_complete.loan_approval.data;
+
+
+class Approval
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "approval"
+        #de.generated
+{
+    boolean approved
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "approved"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Approval(boolean approved, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Approval()
+                #dataio.default;
+}
+
+class Bankruptcy
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "bankruptcy"
+        #de.generated
+{
+    long chapter
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "chapter"
+                #update;
+    java.time.LocalDate date
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "date"
+                #update;
+    string reason
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "reason"
+                #update;
+    Bankruptcy(long chapter, java.time.LocalDate date, string reason)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Bankruptcy()
+                #dataio.default;
+}
+
+class Borrower
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "borrower"
+        #de.generated
+{
+    com.ibm.ads.samples.ml_complete.loan_approval.data.SSN SSN
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "SSN"
+                #update;
+    java.time.LocalDate birthDate
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "birthDate"
+                #update;
+    long creditScore
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "creditScore"
+                #update;
+    string firstName
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "firstName"
+                #update;
+    string lastName
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "lastName"
+                #update;
+    com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy latestBankruptcy
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "latestBankruptcy"
+                #update;
+    com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower spouse
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "spouse"
+                #update;
+    long yearlyIncome
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "yearlyIncome"
+                #update;
+    string zipCode
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "zipCode"
+                #update;
+    Borrower(com.ibm.ads.samples.ml_complete.loan_approval.data.SSN SSN, java.time.LocalDate birthDate, long creditScore, string firstName, string lastName, com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy latestBankruptcy, com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower spouse, long yearlyIncome, string zipCode)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Borrower()
+                #dataio.default;
+}
+
+class Grade
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "grade"
+        #de.generated
+{
+    string grade
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "grade"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Grade(string grade, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Grade()
+                #dataio.default;
+}
+
+class Insurance
+        property ads.typeId "7"
+        property com.fasterxml.jackson.annotation.JsonTypeName "insurance"
+        #de.generated
+{
+    double rate
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "rate"
+                #update;
+    boolean required
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "required"
+                #update;
+    Insurance(double rate, boolean required)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Insurance()
+                #dataio.default;
+}
+
+class Loan
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "loan"
+        #de.generated
+{
+    long amount
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "amount"
+                #update;
+    long numberOfMonthlyPayments
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "numberOfMonthlyPayments"
+                #update;
+    double rate
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "rate"
+                #update;
+    java.time.LocalDate startDate
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "startDate"
+                #update;
+    Loan(long amount, long numberOfMonthlyPayments, double rate, java.time.LocalDate startDate)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Loan()
+                #dataio.default;
+}
+
+class RiskProbabilities
+        property ads.typeId "8"
+        property com.fasterxml.jackson.annotation.JsonTypeName "riskProbabilities"
+        #de.generated
+{
+    double paymentDefault
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "paymentDefault"
+                #update;
+    double probability
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "probability"
+                #update;
+    RiskProbabilities(double paymentDefault, double probability)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    RiskProbabilities()
+                #dataio.default;
+}
+
+class SSN
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "SSN"
+        #de.generated
+{
+    string areaNumber
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "areaNumber"
+                #update;
+    string groupCode
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "groupCode"
+                #update;
+    string serialNumber
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "serialNumber"
+                #update;
+    SSN(string areaNumber, string groupCode, string serialNumber)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    SSN()
+                #dataio.default;
+}
+

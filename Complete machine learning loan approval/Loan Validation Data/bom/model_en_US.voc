@@ -1,0 +1,121 @@
+
+# Term: number of monthly payments
+@number\ of\ monthly\ payments#plural = number of monthly payments
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.Approval
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval#concept.documentation = \n
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval#concept.label = approval
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.Approval(boolean,java.lang.String)#phrase.navigation = a new {approval} where {0, approved} {1, message}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.action[0] = {this} gets approved only if {approved}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.action[1] = make it {approved} that {this} is approved
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.action[1].deprecated = true
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.navigation = {this} is approved
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.negative_predicate = {this} is not approved
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.negative_predicate_setter = {this} does not get approved
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.approved#phrase.positive_predicate_setter = {this} gets approved
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.message#phrase.action = set the message of {this} to {message}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Approval.message#phrase.navigation = {message} of {this}
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy#concept.label = bankruptcy
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.Bankruptcy(long,java.time.LocalDate,java.lang.String)#phrase.navigation = a new {bankruptcy} where {0, chapter} {1, date} {2, reason}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.chapter#phrase.action = set the chapter of {this} to {chapter}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.chapter#phrase.addition_setter = add {chapter} to the chapter of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.chapter#phrase.navigation = {chapter} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.chapter#phrase.subtraction_setter = subtract {chapter} from the chapter of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.date#phrase.action = set the date of {this} to {date}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.date#phrase.navigation = {date} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.reason#phrase.action = set the reason of {this} to {reason}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy.reason#phrase.navigation = {reason} of {this}
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower#concept.label = borrower
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.Borrower(com.ibm.ads.samples.ml_complete.loan_approval.data.SSN,java.time.LocalDate,long,java.lang.String,java.lang.String,com.ibm.ads.samples.ml_complete.loan_approval.data.Bankruptcy,com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower,long,java.lang.String)#phrase.navigation = a new {borrower} where {0, SSN} {1, birth date} {2, credit score} {3, first name} {4, last name} {5, latest bankruptcy} {6, spouse} {7, yearly income} {8, zip code}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.SSN#phrase.action = set the SSN of {this} to {SSN}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.SSN#phrase.clearer = clear the SSN of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.SSN#phrase.navigation = {SSN} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.birthDate#phrase.action = set the birth date of {this} to {birth date}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.birthDate#phrase.navigation = {birth date} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.creditScore#phrase.action = set the credit score of {this} to {credit score}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.creditScore#phrase.addition_setter = add {credit score} to the credit score of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.creditScore#phrase.navigation = {credit score} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.creditScore#phrase.subtraction_setter = subtract {credit score} from the credit score of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.firstName#phrase.action = set the first name of {this} to {first name}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.firstName#phrase.navigation = {first name} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.lastName#phrase.action = set the last name of {this} to {last name}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.lastName#phrase.navigation = {last name} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.latestBankruptcy#phrase.action = set the latest bankruptcy of {this} to {latest bankruptcy}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.latestBankruptcy#phrase.clearer = clear the latest bankruptcy of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.latestBankruptcy#phrase.navigation = {latest bankruptcy} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.spouse#phrase.action = set the spouse of {this} to {spouse}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.spouse#phrase.clearer = clear the spouse of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.spouse#phrase.navigation = {spouse} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.yearlyIncome#phrase.action = set the yearly income of {this} to {yearly income}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.yearlyIncome#phrase.addition_setter = add {yearly income} to the yearly income of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.yearlyIncome#phrase.navigation = {yearly income} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.yearlyIncome#phrase.subtraction_setter = subtract {yearly income} from the yearly income of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.zipCode#phrase.action = set the zip code of {this} to {zip code}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Borrower.zipCode#phrase.navigation = {zip code} of {this}
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.Grade
+com.ibm.ads.samples.ml_complete.loan_approval.data.Grade#concept.label = grade
+com.ibm.ads.samples.ml_complete.loan_approval.data.Grade.Grade(java.lang.String,java.lang.String)#phrase.navigation = a new {grade} where {0, grade} {1, message}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Grade.grade#phrase.action = set the grade of {this} to {grade}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Grade.grade#phrase.navigation = {grade} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Grade.message#phrase.action = set the message of {this} to {message}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Grade.message#phrase.navigation = {message} of {this}
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance#concept.label = insurance
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.Insurance(double,boolean)#phrase.navigation = a new {insurance} where {0, rate} {1, required}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.rate#phrase.action = set the rate of {this} to {rate}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.rate#phrase.addition_setter = add {rate} to the rate of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.rate#phrase.navigation = {rate} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.rate#phrase.subtraction_setter = subtract {rate} from the rate of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.action[0] = {this} gets required only if {required}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.action[1] = make it {required} that {this} is required
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.action[1].deprecated = true
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.navigation = {this} is required
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.negative_predicate = {this} is not required
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.negative_predicate_setter = {this} does not get required
+com.ibm.ads.samples.ml_complete.loan_approval.data.Insurance.required#phrase.positive_predicate_setter = {this} gets required
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.Loan
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan#concept.label = loan
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.Loan(long,long,double,java.time.LocalDate)#phrase.navigation = a new {loan} where {0, amount} {1, number of monthly payments} {2, rate} {3, start date}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.amount#phrase.action = set the amount of {this} to {amount}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.amount#phrase.addition_setter = add {amount} to the amount of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.amount#phrase.navigation = {amount} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.numberOfMonthlyPayments#phrase.action = set the number of monthly payments of {this} to {number of monthly payments}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.numberOfMonthlyPayments#phrase.addition_setter = add {number of monthly payments} to the number of monthly payments of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.numberOfMonthlyPayments#phrase.navigation = {number of monthly payments} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.numberOfMonthlyPayments#phrase.subtraction_setter = subtract {number of monthly payments} from the number of monthly payments of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.rate#phrase.action = set the rate of {this} to {rate}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.rate#phrase.addition_setter = add {rate} to the rate of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.rate#phrase.navigation = {rate} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.rate#phrase.subtraction_setter = subtract {rate} from the rate of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.startDate#phrase.action = set the start date of {this} to {start date}
+com.ibm.ads.samples.ml_complete.loan_approval.data.Loan.startDate#phrase.navigation = {start date} of {this}
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities#concept.label = risk probabilities
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.RiskProbabilities(double,double)#phrase.navigation = a new {risk probabilities} where {0, payment default} {1, probability}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.paymentDefault#phrase.action = set the payment default of {this} to {payment default}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.paymentDefault#phrase.addition_setter = add {payment default} to the payment default of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.paymentDefault#phrase.navigation = {payment default} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.paymentDefault#phrase.subtraction_setter = subtract {payment default} from the payment default of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.probability#phrase.action = set the probability of {this} to {probability}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.probability#phrase.addition_setter = add {probability} to the probability of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.probability#phrase.navigation = {probability} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.RiskProbabilities.probability#phrase.subtraction_setter = subtract {probability} from the probability of {this}
+
+# com.ibm.ads.samples.ml_complete.loan_approval.data.SSN
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN#concept.label = SSN
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.SSN(java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {SSN} where {0, area number} {1, group code} {2, serial number}
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.areaNumber#phrase.action = set the area number of {this} to {area number}
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.areaNumber#phrase.navigation = {area number} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.groupCode#phrase.action = set the group code of {this} to {group code}
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.groupCode#phrase.navigation = {group code} of {this}
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.serialNumber#phrase.action = set the serial number of {this} to {serial number}
+com.ibm.ads.samples.ml_complete.loan_approval.data.SSN.serialNumber#phrase.navigation = {serial number} of {this}
